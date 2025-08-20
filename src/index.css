@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Garderobe Theme Custom Styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-garderobe-gray-100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-garderobe-gray-400 rounded;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-garderobe-gray-500;
+  }
+}
+
+@layer components {
+  /* Button styles inspired by Garderobe - with rounded corners */
+  .btn-primary {
+    @apply bg-garderobe-black text-white px-8 py-3 text-sm font-medium tracking-wider uppercase hover:bg-garderobe-red transition-colors duration-300 rounded-xl;
+  }
+  
+  .btn-outline {
+    @apply border border-garderobe-black text-garderobe-black px-8 py-3 text-sm font-medium tracking-wider uppercase hover:bg-garderobe-black hover:text-white transition-all duration-300 rounded-xl;
+  }
+  
+  /* Product card hover effect - with rounded corners */
+  .product-card {
+    @apply transition-transform duration-300 hover:-translate-y-2 rounded-2xl overflow-hidden;
+  }
+  
+  /* Input and form elements - with rounded corners */
+  .input-field {
+    @apply border border-garderobe-gray-300 px-4 py-3 text-sm focus:border-garderobe-red focus:ring-2 focus:ring-garderobe-red/20 transition-all duration-200 rounded-xl;
+  }
+  
+  .textarea-field {
+    @apply border border-garderobe-gray-300 px-4 py-3 text-sm focus:border-garderobe-red focus:ring-2 focus:ring-garderobe-red/20 transition-all duration-200 rounded-xl resize-none;
+  }
+  
+  /* Card components */
+  .card {
+    @apply bg-white border border-garderobe-gray-200 shadow-sm rounded-2xl overflow-hidden;
+  }
+  
+  /* Badge components */
+  .badge {
+    @apply px-3 py-1 text-xs font-medium rounded-full;
+  }
+  
+  /* Modal and dropdown components */
+  .modal {
+    @apply bg-white shadow-xl rounded-3xl overflow-hidden;
+  }
+  
+  .dropdown {
+    @apply bg-white border border-garderobe-gray-200 shadow-lg rounded-2xl overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
