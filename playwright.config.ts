@@ -9,8 +9,9 @@ export default defineConfig({
   reporter: 'list',
   use: {
     baseURL: 'http://localhost:5176',
-    trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
+    trace: 'on',
+    screenshot: 'on',
+    video: 'on',
   },
   projects: [
     {

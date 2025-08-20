@@ -1,0 +1,241 @@
+# Page snapshot
+
+```yaml
+- img
+- img
+- banner:
+  - link "BK BK Crackers":
+    - /url: /
+  - navigation:
+    - link "Home":
+      - /url: /
+    - link "QuickBuy":
+      - /url: /quickbuy
+    - link "Categories":
+      - /url: /categories
+    - link "About":
+      - /url: /about
+    - link "Contact":
+      - /url: /contact
+  - button "Search":
+    - img
+  - link:
+    - /url: /favorites
+    - img
+  - link:
+    - /url: /cart
+    - img
+  - button:
+    - img
+- text: Purchase Rs.8001 to 15,000 to get a 30 Mulicolour Shots FREE!!!• Purchase Rs.15,001 to 30,000 to get a 60 Multicolour Shots FREE!!!• Purchase Rs.5000 to 8000 to get a 12 Multicolour Shots FREE!!! Purchase Rs.8001 to 15,000 to get a 30 Mulicolour Shots FREE!!!• Purchase Rs.15,001 to 30,000 to get a 60 Multicolour Shots FREE!!!• Purchase Rs.5000 to 8000 to get a 12 Multicolour Shots FREE!!!
+- heading "CELEBRATE DIWALI IN STYLE" [level=1]
+- paragraph: Premium quality fireworks for your celebrations. Safe, certified, and delivered fast to your doorstep.
+- text: Trusted by thousands
+- button "Shop Now":
+  - text: Shop Now
+  - img
+- img "Premium Fireworks Collection - Gift Boxes & Crackers"
+- img
+- text: Premium Quality
+- img
+- text: Safe & Certified
+- img
+- text: Fast Delivery
+- img
+- text: High Rating
+- img
+- img
+- heading "FEATURED PRODUCTS" [level=2]
+- paragraph: Handpicked premium fireworks for your celebrations
+- button "Add to favorites":
+  - img
+- img "Skyking's Colour Candle (3 Pcs)"
+- paragraph: hand-lighters
+- heading "Skyking's Colour Candle (3 Pcs)" [level=3]
+- text: ₹125.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "Rainbow Fog"
+- paragraph: colour-smoke
+- heading "Rainbow Fog" [level=3]
+- text: ₹350.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "Cylinder Bomb"
+- paragraph: bombs
+- heading "Cylinder Bomb" [level=3]
+- text: ₹160.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "60 Items VIP"
+- paragraph: gift-boxes
+- heading "60 Items VIP" [level=3]
+- text: ₹1300.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- link "View All Products":
+  - /url: /quickbuy
+- heading "NEW ARRIVALS" [level=2]
+- paragraph: Latest additions to our premium collection
+- button "Add to favorites":
+  - img
+- img "55 Items Carnival"
+- paragraph: gift-boxes
+- heading "55 Items Carnival" [level=3]
+- text: ₹1200.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "50 Items Wonderful"
+- paragraph: gift-boxes
+- heading "50 Items Wonderful" [level=3]
+- text: ₹1100.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "45 Items Paradise"
+- paragraph: gift-boxes
+- heading "45 Items Paradise" [level=3]
+- text: ₹950.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "40 Items Angry Birds"
+- paragraph: gift-boxes
+- heading "40 Items Angry Birds" [level=3]
+- text: ₹750.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- link "Shop All New Arrivals":
+  - /url: /quickbuy
+- heading "SPECIAL ITEMS" [level=2]
+- paragraph: Exclusive deals on our best-selling fireworks
+- button "Add to favorites":
+  - img
+- img "Skyking's Colour Candle (3 Pcs)"
+- paragraph: hand-lighters
+- heading "Skyking's Colour Candle (3 Pcs)" [level=3]
+- text: ₹125.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "Rainbow Fog"
+- paragraph: colour-smoke
+- heading "Rainbow Fog" [level=3]
+- text: ₹350.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "Cylinder Bomb"
+- paragraph: bombs
+- heading "Cylinder Bomb" [level=3]
+- text: ₹160.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- button "Add to favorites":
+  - img
+- img "60 Items VIP"
+- paragraph: gift-boxes
+- heading "60 Items VIP" [level=3]
+- text: ₹1300.00
+- button "-"
+- text: "1"
+- button "+"
+- button "Add to Cart"
+- link "Explore All Deals":
+  - /url: /quickbuy
+- contentinfo:
+  - heading "BK Crackers" [level=3]
+  - paragraph: Premium Quality Fireworks for Your Celebrations
+  - paragraph: Bringing joy and light to your festivities with the finest selection of crackers and fireworks.
+  - link:
+    - /url: "#"
+    - img
+  - link:
+    - /url: "#"
+    - img
+  - link:
+    - /url: "#"
+    - img
+  - link:
+    - /url: "#"
+    - img
+  - heading "Quick Links" [level=3]
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem:
+      - link "About Us":
+        - /url: /about
+    - listitem:
+      - link "Contact":
+        - /url: /contact
+    - listitem:
+      - link "Shipping Info":
+        - /url: /shipping
+  - heading "Categories" [level=3]
+  - list:
+    - listitem:
+      - link "All Products":
+        - /url: /quickbuy
+    - listitem:
+      - link "New Arrivals":
+        - /url: /categories?filter=new
+    - listitem:
+      - link "Featured":
+        - /url: /categories?filter=featured
+  - heading "Contact Info" [level=3]
+  - paragraph: 123 Fireworks Street Chennai, Tamil Nadu 600001
+  - paragraph:
+    - link "info@bkcrackers.com":
+      - /url: mailto:info@bkcrackers.com
+  - paragraph:
+    - link "+91 98765 43210":
+      - /url: tel:+919876543210
+  - heading "Subscribe to Newsletter" [level=3]
+  - textbox "Enter your email"
+  - button "Subscribe"
+  - text: © 2025 BK Crackers. All rights reserved.
+  - link "Terms & Conditions":
+    - /url: /terms
+  - link "Safety Guidelines":
+    - /url: /safety
+  - paragraph:
+    - text: Developed and Maintained by
+    - link "United Nexa Tech":
+      - /url: https://unitednexa.com/
+```

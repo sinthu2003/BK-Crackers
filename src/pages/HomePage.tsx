@@ -5,10 +5,14 @@ import FeaturedProducts from '../components/FeaturedProducts'
 import NewArrivals from '../components/NewArrivals'
 import SpecialItems from '../components/SpecialItems'
 import Footer from '../components/Footer'
+import FirecrackerAnimations from '../components/FirecrackerAnimations'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Background Firecracker Animations */}
+      <FirecrackerAnimations />
+      
       <Header />
       <NewsSection />
       <HeroSection />
