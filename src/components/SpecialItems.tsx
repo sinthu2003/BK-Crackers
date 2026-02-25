@@ -12,17 +12,17 @@ export default function SpecialItems() {
     const fetchProducts = async () => {
       try {
         // First try to get special items
-        let response = await productService.getSpecialItems(4)
-        
+        const specialResponse = await productService.getSpecialItems(4)
+
         // If no special items, get regular products
-        if (!response.success || response.data.length === 0) {
+        if (!specialResponse.success || specialResponse.data.length === 0) {
           console.log('No special items found, fetching regular products...')
-          response = await productService.getAllProducts(1, 12)
-          if (response.success && response.data.data) {
-            setProducts(response.data.data.slice(8, 12))
+          const allResponse = await productService.getAllProducts(1, 12)
+          if (allResponse.success && allResponse.data.data) {
+            setProducts(allResponse.data.data.slice(8, 12))
           }
         } else {
-          setProducts(response.data)
+          setProducts(specialResponse.data)
         }
       } catch (error) {
         console.error('Failed to fetch special items:', error)
@@ -30,7 +30,7 @@ export default function SpecialItems() {
         setLoading(false)
       }
     }
-    
+
     fetchProducts()
   }, [])
 

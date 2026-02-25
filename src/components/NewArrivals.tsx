@@ -12,17 +12,17 @@ export default function NewArrivals() {
     const fetchProducts = async () => {
       try {
         // First try to get new arrivals
-        let response = await productService.getNewArrivals(4)
-        
+        const newResponse = await productService.getNewArrivals(4)
+
         // If no new arrivals, get regular products
-        if (!response.success || response.data.length === 0) {
+        if (!newResponse.success || newResponse.data.length === 0) {
           console.log('No new arrivals found, fetching regular products...')
-          response = await productService.getAllProducts(1, 8)
-          if (response.success && response.data.data) {
-            setProducts(response.data.data.slice(4, 8))
+          const allResponse = await productService.getAllProducts(1, 8)
+          if (allResponse.success && allResponse.data.data) {
+            setProducts(allResponse.data.data.slice(4, 8))
           }
         } else {
-          setProducts(response.data)
+          setProducts(newResponse.data)
         }
       } catch (error) {
         console.error('Failed to fetch new arrivals:', error)
@@ -30,7 +30,7 @@ export default function NewArrivals() {
         setLoading(false)
       }
     }
-    
+
     fetchProducts()
   }, [])
 

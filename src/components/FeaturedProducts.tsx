@@ -12,17 +12,17 @@ export default function FeaturedProducts() {
     const fetchProducts = async () => {
       try {
         // First try to get featured products
-        let response = await productService.getFeaturedProducts(4)
-        
+        const featResponse = await productService.getFeaturedProducts(4)
+
         // If no featured products, get regular products
-        if (!response.success || response.data.length === 0) {
+        if (!featResponse.success || featResponse.data.length === 0) {
           console.log('No featured products found, fetching regular products...')
-          response = await productService.getAllProducts(1, 4)
-          if (response.success && response.data.data) {
-            setProducts(response.data.data.slice(0, 4))
+          const allResponse = await productService.getAllProducts(1, 4)
+          if (allResponse.success && allResponse.data.data) {
+            setProducts(allResponse.data.data.slice(0, 4))
           }
         } else {
-          setProducts(response.data)
+          setProducts(featResponse.data)
         }
       } catch (error) {
         console.error('Failed to fetch featured products:', error)
@@ -30,7 +30,7 @@ export default function FeaturedProducts() {
         setLoading(false)
       }
     }
-    
+
     fetchProducts()
   }, [])
 
